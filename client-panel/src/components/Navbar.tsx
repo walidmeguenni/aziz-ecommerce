@@ -1,5 +1,6 @@
 "use client";
 
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -10,7 +11,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-const Navbar = () => {
+export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -27,4 +28,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
